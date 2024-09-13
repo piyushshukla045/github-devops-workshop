@@ -1,0 +1,21 @@
+ git status
+ history
+ git branch dev
+ git status
+ git checkout dev
+ ls
+ branch
+ branch status
+ git branch
+ git status
+ add dev-practice
+ git add dev-practice
+ ls
+ git add dev-practice.txt
+ git status
+ git checkout main
+ git switch mainn
+ git switch main
+ git switch dev
+ git restore --staged dev-practice.txt
+ git switch main
