@@ -1,8 +1,8 @@
 def my_function():
 
-    password = "test"
+    a = "test"
 
-    print(password)
+    print(a)
 
 
 my_function()
