@@ -30,10 +30,6 @@
  git status
  git commit -m "added changes"
  ls
- git commit -m "added changes"
- git commit -m "added changes"
- git commit -m "added changes"
- git commit -m "added changes"
  git add demo.py
  git commit -m "Changes commited"
  git commit -m "Changes commited"
