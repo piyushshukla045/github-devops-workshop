@@ -23,9 +23,6 @@
  git commit -m "added changes"
  git add demo.py
  git status
- git commit -m "Changes commited"
- git commit -m "Changes commited"
- git commit -m "Changes commited"
  git add demo.py
  git status
  git commit -m "added changes"
