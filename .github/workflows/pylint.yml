@@ -3,7 +3,7 @@ name: Pylint
 on:
   push:
     branches:
-      - main  # Add specific branches where this workflow should run (optional)
+      - main
 
 jobs:
   build:
@@ -14,17 +14,18 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4  # Correct version
+      uses: actions/checkout@v4
 
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+        node-version: '20'  # Ensure Node.js 20 is used for setup-python
 
     - name: Set up Node.js (fix deprecation warning)
       uses: actions/setup-node@v3
       with:
-        node-version: '20'
+        node-version: '20'  # Explicitly set Node.js 20 to avoid future issues
 
     - name: Install dependencies
       run: |
@@ -37,4 +38,3 @@ jobs:
 
     - name: Check Python version
       run: python --version
-
